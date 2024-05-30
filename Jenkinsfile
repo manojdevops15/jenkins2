@@ -17,4 +17,18 @@ pipeline {
             }
         }
     }
+
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+
+        failure {
+            echo 'build was fail plz check once'
+        }
+
+        success{
+            echo 'build was success'
+        }
+    }
 }
