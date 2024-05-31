@@ -41,6 +41,12 @@ pipeline {
             }
         }
 
+    stage('Ramesh') {
+            steps {
+                echo 'Hello Ramesh'
+            }
+        }
+
     stage('params') {
             steps {
                 sh """
